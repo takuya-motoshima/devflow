@@ -52,7 +52,14 @@ One instruction, and the entire development cycle runs automatically.
 [Claude Code](https://claude.com/claude-code) >= 1.0.0 required.
 
 ```
-/plugin install takuya-motoshima/devflow
+/plugin install devflow@claude-plugin-directory
+```
+
+Or, install from the [flux](https://github.com/takuya-motoshima/flux) marketplace:
+
+```
+/plugin marketplace add takuya-motoshima/flux
+/plugin install devflow@flux
 ```
 
 After installation, **restart Claude Code** to load the agents. Verify with `/agents`.
@@ -61,7 +68,7 @@ After installation, **restart Claude Code** to load the agents. Verify with `/ag
 > If you get validation errors like `agents: Invalid input`, clear the plugin cache and retry:
 > ```
 > rm -rf ~/.claude/plugins/cache/
-> /plugin install takuya-motoshima/devflow
+> /plugin install devflow@claude-plugin-directory
 > ```
 
 ## Usage

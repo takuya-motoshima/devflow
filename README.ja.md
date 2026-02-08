@@ -52,7 +52,14 @@ DevFlow: 爆速モードで進めます。
 [Claude Code](https://claude.com/claude-code) >= 1.0.0 が必要です。
 
 ```
-/plugin install takuya-motoshima/devflow
+/plugin install devflow@claude-plugin-directory
+```
+
+または、[flux](https://github.com/takuya-motoshima/flux) マーケットプレイスからインストール:
+
+```
+/plugin marketplace add takuya-motoshima/flux
+/plugin install devflow@flux
 ```
 
 インストール後、**Claude Code を再起動**してエージェントを読み込みます。`/agents` で確認できます。
@@ -61,7 +68,7 @@ DevFlow: 爆速モードで進めます。
 > `agents: Invalid input` 等のバリデーションエラーが出る場合、プラグインキャッシュをクリアして再試行:
 > ```
 > rm -rf ~/.claude/plugins/cache/
-> /plugin install takuya-motoshima/devflow
+> /plugin install devflow@claude-plugin-directory
 > ```
 
 ## 使い方

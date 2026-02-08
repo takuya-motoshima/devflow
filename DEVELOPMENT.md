@@ -20,7 +20,11 @@ DevFlow の開発者および Claude Code セッション向けのコンテキ�
 
 ### インストール
 ```
-/plugin install takuya-motoshima/devflow
+/plugin install devflow@claude-plugin-directory
+
+# または flux マーケットプレイスから
+/plugin marketplace add takuya-motoshima/flux
+/plugin install devflow@flux
 
 # 確認
 /agents
@@ -212,7 +216,7 @@ maxTurns: 50  # 役割に応じて調整
 プラグインのホットリロードは未実装（[#18174](https://github.com/anthropics/claude-code/issues/18174), [#6497](https://github.com/anthropics/claude-code/issues/6497)）。インストール後は **Claude Code を再起動** する必要がある
 
 ```
-/plugin install takuya-motoshima/devflow
+/plugin install devflow@claude-plugin-directory
 → Claude Code を終了して再起動
 → /agents で確認
 ```
@@ -224,13 +228,13 @@ maxTurns: 50  # 役割に応じて調整
 1. **キャッシュクリア** — Claude Code のプラグインキャッシュは自動無効化されない既知バグがある（[#14061](https://github.com/anthropics/claude-code/issues/14061), [#16866](https://github.com/anthropics/claude-code/issues/16866)）
    ```bash
    rm -rf ~/.claude/plugins/cache/
-   /plugin install takuya-motoshima/devflow
+   /plugin install devflow@claude-plugin-directory
    ```
 2. **再インストール**
    ```bash
    /plugin uninstall devflow
    rm -rf ~/.claude/plugins/cache/
-   /plugin install takuya-motoshima/devflow
+   /plugin install devflow@claude-plugin-directory
    ```
 
 ## 関連リソース
